@@ -15,4 +15,5 @@ RUN adduser -D -u 1001 bot &&  chown -R bot:bot /app/notes &&  chown bot:bot /ap
 
 USER bot
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+EXPOSE 3000
 ENTRYPOINT ["node", "index.js"]
