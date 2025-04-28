@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'frontend/**'
+      - 'xss/**'
       - '.github/workflows/xss-docker.yml'
   pull_request:
     branches: [ main ]
@@ -14,7 +14,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-frontend
+  IMAGE_NAME: ${{ github.repository }}-xss
 
 jobs:
   build-and-push:
